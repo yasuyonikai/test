@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>RELEAGATED TO THE ATTIC</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../../css/base.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="jquery.gvChart-1.1.min.js"></script>
+<script type="text/javascript">
+gvChartInit();
+jQuery(document).ready(function(){
+jQuery('#myTable1').gvChart({
+chartType: 'AreaChart',
+gvSettings: {
+vAxis: {title: '冊数'},
+hAxis: {title: 'Month'},
+width: 720,
+height: 300
+}
+});
+
+
+jQuery('#myTable2').gvChart({
+chartType: 'LineChart',
+gvSettings: {
+vAxis: {title: '冊数'},
+hAxis: {title: 'Month'},
+width: 720,
+height: 300
+}
+});
+
+jQuery('#myTable3').gvChart({
+chartType: 'BarChart',
+gvSettings: {
+vAxis: {title: '冊数'},
+hAxis: {title: 'Month'},
+width: 720,
+height: 300
+}
+});
+
+
+jQuery('#myTable4').gvChart({
+chartType: 'ColumnChart',
+gvSettings: {
+vAxis: {title: '冊数'},
+hAxis: {title: 'Month'},
+width: 720,
+height: 300
+}
+});
+
+jQuery('#myTable5').gvChart({
+chartType: 'PieChart',
+gvSettings: {
+vAxis: {title: '冊数'},
+hAxis: {title: 'Month'},
+width: 720,
+height: 300
+}
+});
+});
+</script>
+</head>
+
+<body id="container" class="trying">
+	<div id="header">
+		<div class="inner clearfix">
+		<ul class="inner clearfix">
+			<li><a href="../../index.html" target="_self" title="home">home</a></li>
+			<li style="width:3em;text-align:center;"><a href="../../WP/" target="_self" title="blog">blog</a></li>
+			<!-- <li data-filter="trying"><a href="trying/index.html" target="_self" title="trying">trying</a></li>
+			<li><a href="#" target="_self" title="hobby">hobby</a></li> -->
+		</ul>
+		<p style="float:right;padding:10px 0 0 0;width:324px;" ><img src="../../images/logo_limb.png" height="27" width="324" alt="RELEGATED TO THE ATTIC"/></p>
+		</div>
+	</div>
+
+	<div class="wrap inner clearfix">
+		<h2><img src="../img/title.png" height="75" width="204" alt="TRYING" /></h2>
+		<div class="als-container">
+			<div class="title">
+				<p>2013/06/21</p>
+				<h3>データグラフ化 jQuery 試作</h3>
+			</div>
+			<p class="mb10">業務でデータをグラフ化するといった要件があったため、読書メーター風に試作してみた。<br />（冊数だから整数にしたかったけど・・）</p>
+			<p class="mb20">参考サイト：<a href="http://www.ivellios.toron.pl/technikalia/2010/06/22/gvchart-plugin-jquery-with-google-charts/">http://www.ivellios.toron.pl/technikalia/2010/06/22/gvchart-plugin-jquery-with-google-charts/</a></p>
+			<h4>読書量チャート　折れ線1</h4>
+			<table id='myTable1'>
+				<caption>読書量チャート　折れ線1</caption>
+				<thead>
+				<tr>
+				<th></th>
+				<th>Jan</th>
+				<th>Feb</th>
+				<th>Mar</th>
+				<th>Apr</th>
+				<th>May</th>
+				<th>Jun</th>
+				<th>Jul</th>
+				<th>Aug</th>
+				<th>Sep</th>
+				<th>Oct</th>
+				<th>Nov</th>
+				<th>Dec</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>2013</th>
+				<td>1</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>1</td>
+				<td>3</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				</tr>
+				<tr>
+				<th>2012</th>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>2</td>
+				</tr>
+				</tbody>
+			</table>
+			<h4 class="mt20">読書量チャート　折れ線2</h4>
+			<table id='myTable2'>
+				<caption>読書量チャート　折れ線2</caption>
+				<thead>
+				<tr>
+				<th></th>
+				<th>Jan</th>
+				<th>Feb</th>
+				<th>Mar</th>
+				<th>Apr</th>
+				<th>May</th>
+				<th>Jun</th>
+				<th>Jul</th>
+				<th>Aug</th>
+				<th>Sep</th>
+				<th>Oct</th>
+				<th>Nov</th>
+				<th>Dec</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>2013</th>
+				<td>1</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>1</td>
+				<td>3</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				</tr>
+				<tr>
+				<th>2012</th>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>2</td>
+				</tr>
+				</tbody>
+			</table>
+			<h4 class="mt20">読書量チャート　棒グラフ1</h4>
+			<table id='myTable3'>
+				<caption>読書量チャート　棒グラフ1</caption>
+				<thead>
+				<tr>
+				<th></th>
+				<th>Jan</th>
+				<th>Feb</th>
+				<th>Mar</th>
+				<th>Apr</th>
+				<th>May</th>
+				<th>Jun</th>
+				<th>Jul</th>
+				<th>Aug</th>
+				<th>Sep</th>
+				<th>Oct</th>
+				<th>Nov</th>
+				<th>Dec</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>2013</th>
+				<td>1</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>1</td>
+				<td>3</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				</tr>
+				<tr>
+				<th>2012</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>2</td>
+				</tr>
+				</tbody>
+			</table>
+			<h4 class="mt20">読書量チャート　棒グラフ2</h4>
+			<table id='myTable4'>
+				<caption>読書量チャート　棒グラフ2</caption>
+				<thead>
+				<tr>
+				<th></th>
+				<th>Jan</th>
+				<th>Feb</th>
+				<th>Mar</th>
+				<th>Apr</th>
+				<th>May</th>
+				<th>Jun</th>
+				<th>Jul</th>
+				<th>Aug</th>
+				<th>Sep</th>
+				<th>Oct</th>
+				<th>Nov</th>
+				<th>Dec</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>2013</th>
+				<td>1</td>
+				<td>5</td>
+				<td>4</td>
+				<td>3</td>
+				<td>1</td>
+				<td>3</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				</tr>
+				<tr>
+				<th>2012</th>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1</td>
+				<td>2</td>
+				<td>2</td>
+				</tr>
+				</tbody>
+			</table>
+			<!-- <h4 class="mt20">読書著者チャート　円グラフ</h4>
+			<table id='myTable5'>
+				<caption>Game players count</caption>
+				<thead>
+				<tr>
+				<th></th>
+				<th>Jan</th>
+				<th>Feb</th>
+				<th>Mar</th>
+				<th>Apr</th>
+				<th>May</th>
+				<th>Jun</th>
+				<th>Jul</th>
+				<th>Aug</th>
+				<th>Sep</th>
+				<th>Oct</th>
+				<th>Nov</th>
+				<th>Dec</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+				<th>2010</th>
+				<td>125</td>
+				<td>185</td>
+				<td>327</td>
+				<td>359</td>
+				<td>376</td>
+				<td>398</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				</tr>
+				</tbody>
+			</table> -->
+		</div>
+	</div>
+	<div id="footer">
+		<address id="footer" class="inner">Copyright (C) yausyonika Corporation. All Rights Reserved.</address>
+	</div>
+</body>
+</html>
+

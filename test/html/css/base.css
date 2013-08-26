@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	background-color:#1F0032;
+	width:100%;
+	overflow-x: hidden;
+	font-size: 6.25%;
+}
+
+body {
+	color: #000000;
+	font-family: Arial,Helvetica,serif;
+	font-size: 14rem;  //14px
+	margin: 20px auto 50px auto;
+	font-family: "Gill Sans","ヒラギノ角ゴ Pro","メイリオ", "ＭＳ Ｐゴシック", sans-serif;
+	background: -moz-linear-gradient(
+		top,
+		#F6F2D5 0%,
+		#DFD6E8);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#F6F2D5),
+		to(#DFD6E8));
+	width:100%;
+	-webkit-text-size-adjust: 100%;
+}
+#container{
+	margin:0 auto;
+}
+a {text-decoration: none;color:#24003F;}
+a:hover {text-decoration:underline;color:#666;}
+a:visited {color:#24003F;}
+ul {list-style-type: none;}
+li {list-style-position: outside;}
+.inner{width:940px; margin:0 auto;}
+.wrap{margin-bottom:100px;clear:both;}
+
+div#header{margin-bottom:100px;font-size:12px;border-top:20px solid #1F0032;width:100%;}
+div#header ul{float:left;width:50%;}
+
+div#header　a:visited {color:#FFF;}
+
+div#header ul li{
+	background-color:#1F0032;
+	float:left;
+	padding:5px 10px;
+	margin:0;
+	font-family: "Gill Sans";font-size:130%;font-style: italic;
+	font-weight:lighter;
+
+}
+div#header ul li:first-child{
+	border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    padding-left:15px;
+}
+div#header ul li:last-child{
+	border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    padding-right:15px;
+}
+div#header ul li a{
+	color:#FFF;
+	display:block;
+	line-height:normal;
+	margin:0;
+	text-decoration: none;
+}
+
+div#header ul li a:visited {text-decoration:none;color:#FFF;}
+div#header ul li a:hover {text-decoration:none;color:#C6D298;}
+
+h2{text-align:center;margin-bottom: 100px;}
+h2.title{font-size:50rem;font-style: italic;color:#1F0032;}
+
+h3{font-family: "Gill Sans";font-size:180%;margin-bottom:10px;font-style: italic;}
+
+article{margin:0 auto 100px auto;width:80%;}
+
+section.left{float:left;width:45%;}
+section.left p{word-break: break-all;}
+section.right{width:45%; float:right;}
+
+.btBox{
+	text-align:center;
+	margin:0 auto 20px auto;
+	padding:0 68px;
+}
+.btBox a{
+	display:inline-block;
+	margin-right:100px;
+	float:left;
+}
+.btBox a:last-child{margin-right:0;}
+.btBox a:hover img{
+	filter:alpha(opacity=60);
+     -moz-opacity:0.60;
+     -khtml-opacity: 0.60;
+     opacity:0.60;
+}
+
+dt{
+	float:left;
+	margin-right:20px;
+	width:100px;
+	margin-bottom:5px;
+	display:inline-block;
+	clear:both;
+	line-height:1.5em;
+}
+dd{
+	margin-bottom: 5px;
+	line-height:1.5em;
+	display:inline-block;
+	width:200px;
+}
+
+div#footer{
+	text-align:right;
+	font-size:70%;
+	padding-top:5px;
+	color:#E0D7E8;
+	background-color: #1F0032;
+	clear:both;
+	margin-top:200px;
+}
+
+
+/*****************************************/
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+.mt20{margin-top: 20px;}
+
+/*****************************************/
+
+
+/* trying */
+.als-container {
+	margin: 60px auto 80px auto;
+	background-color: #FFF;
+	border-radius: 20px;        /* CSS3草案 */  
+    -webkit-border-radius: 20px;    /* Safari,Google Chrome用 */  
+    -moz-border-radius: 20px;   /* Firefox用 */
+    padding:20px;
+}
+
+body.trying{
+	line-height:1.5em;
+}
+body.trying h4{
+	padding-left: 20px;
+	background:url(../images/ico_h4.png) no-repeat 0 center;
+	height:20px;
+	vertical-align: middle;
+	padding-top:5px;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+
+body.trying .title{
+	margin-bottom:20px;
+	font-style: none;
+	border-bottom: 1px dotted #ccc;
+	padding-left:5px;
+}
+
+body.trying .title p{
+	margin-bottom: 10px;
+}
+
+body.trying h3{
+	font-size:110%;
+	font-style: normal;
+}
+body.trying .leftBox{float:left;width:530px;}
+body.trying .leftBox ul{
+	list-style-type: disc;
+	padding:1em 0 0 1em;
+}
+body.trying .leftBox ul li{
+	margin-bottom:10px;
+}
+body.trying .als-item img{
+	float:right;
+}
+
+/*-----------------------*/
+/* clearfix              */
+/*-----------------------*/
+
+.clearfix:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix{
+    display:inline-block;
+    min-height:1%; /* for IE 7*/
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{
+    height: 1%;
+}
+
+.clearfix{
+    display: block;
+    /display: inline-table;
+}
+
